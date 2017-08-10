@@ -1,1 +1,9 @@
+USAspending.gov API Interaction Guide
+Using R and Python 3.6
+Last updated: 7/18/2017
+
+Introduction
+In this document we will describe how to access the data from our API through Python 3.6 and R
+These data are broken into several online locations or endpoints. These endpoints contain different types of financial data, 
+at varying levels of granularity. See the html file for further instructions.
 
