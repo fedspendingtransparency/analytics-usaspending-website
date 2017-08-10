@@ -7,4 +7,6 @@ from the USAspending DATA Act Analytics team.
     spending treemaps.
  2. Sample Analysis: SBA program data and job creation/job sustaining over time.
 
+UX - This folder contains general templates and website design resources.
+
 Please visit again as we continue to build out the portfolio of projects.
