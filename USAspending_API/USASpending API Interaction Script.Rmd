@@ -1,0 +1,382 @@
+---
+output:
+  html_document: default
+  pdf_document: default
+---
+![](usaspending_logo_analytics_horiz.png)  
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+# USAspending.gov API Interaction Guide  
+### Using R and Python 3.6  
+#### Last updated: 7/18/2017      
+
+### Introduction
+  
+In this document we will describe how to access the data from our API through Python 3.6 and R  
+
+These data are broken into several online locations or *endpoints*. These endpoints contain different types of financial data, at varying levels of granularity. See the descriptions below for more information    
+  
+#### Useful endpoints  
+##### Awards   
+This endpoint also contains information on all financial assistance and procurement awards, though amendments and modifications are rolled up into one record. https://api.usaspending.gov/api/v1/awards/  
+  
+##### Accounts Awards   
+This endpoint also contains information on all financial assistance and procurement awards, though amendments and modifications are rolled up into one record.  https://api.usaspending.gov/api/v1/accounts/awards/     
+  
+##### Transactions  
+This endpoint contains information on all financial assistance and procurement awards, including their amendments and modifications.  https://api.usaspending.gov/api/v1/transactions/   
+  
+##### TAS Categories  
+This endpoint also contains information on appropriation account balances by fiscal year broken up by program activities and object class  https://api.usaspending.gov/api/v1/tas/categories/    
+  
+##### TAS Balances  
+This endpoint also contains information on appropriation account balances by fiscal year. https://api.usaspending.gov/api/v1/tas/balances/   
+  
+For a complete listing of the avaialbale endpoints and other API related documentation please visit https://api.usaspending.gov/ 
+
+  
+### Accessing USA Spending data via a GET request in R  
+  
+Load the requisite pakages necessary for the script to run
+
+```{r libraries, eval=FALSE}
+library(jsonlite)
+library(dplyr)
+```
+
+Set the url to the endpoint which will be the target of the request and attempt to retrieve the first page of data. The first page is requested to check the connection and data quality, we will have to request the first page again in the loop below  
+
+In this script the limit of records per request (aka a page) is set to 100. You may change this setting depending on your connection strength and the level of sophistication in the query you may be running
+
+```{r getPageOne, eval=FALSE}
+url <- "https://api.usaspending.gov/api/v1/awards/?limit=100"
+pages <- list()
+API_data <- fromJSON(url, flatten=TRUE)
+API_data$page_metadata$has_next_page=TRUE
+```
+
+Now paginate through the rest of the data, this may take some time...
+
+```{r getTheRest, eval=FALSE}
+i<-1
+while(API_data$page_metadata$has_next_page==TRUE) {
+  API_data <- fromJSON(paste0(url, "&page=", i), flatten=TRUE)
+  message("Retrieving page ",i)
+  pages[[i]] <- API_data$results
+  i<-i+1
+}
+```
+
+Now bind the data into a dataframe and write it to a csv in your working directory, congratulations you've requested and retrieved data from an endpoint!
+
+```{r bindTheData, eval=FALSE}
+USAspendingData <- bind_rows(pages)
+write.csv(USAspendingData, file="USAspendingData.csv", row.names = FALSE)
+```
+  
+To apply filters to the GET request they can be included directly into the target url   
+  
+For example, if we only need records that are of award type "A" and has a piid that equals "LB01" we can use the following url to filter on those two field/value combinations. The rest of the script remains unchanged     
+  
+```{r, eval=FALSE}
+url <- "https://api.usaspending.gov/api/v1/awards/?limit=100&type=A&piid=LB01"
+```
+  
+### Accessing USA Spending data via a POST request in R
+
+Again, load the requisite pakages necessary for the script to run
+
+```{r, eval=FALSE}
+library(jsonlite)
+library(httr)
+library(dplyr)
+```
+
+Like the GET request we must set the url to the endpoint which will be the target of the request and retrieve the first page of data
+  
+The *body* parameter takes a json file containing the specifics of the body of the request. This request is a general POST request which takes **ALL** fields within the endpoint for each record, even those hidden from a GET request. Other filters may be included in the body to pinpoint records of interest in your request. Check out the Python POST request section at the bottom of this document for detailed examples of some nuanced requests and more detials on the types of filters that may be included in the body of a POST request.     
+
+The params.json file we can begin with requests all cloumns ordered by the *id* variable  
+
+```{r,eval=FALSE}
+{
+  "verbose": true,
+  "order": ["id"]
+}
+```
+
+Also, you'll notice the limit on records per page has been dropped significantly because each record is much larger due to the extra fields. You can adjust the limit depending on the number of extra fields you will encounter in the endpoint  
+  
+```{r, eval=FALSE}
+pages<-list()
+url<-"https://api.usaspending.gov/api/v1/transactions/?limit=25"
+API_response <- httr::POST(url, body = upload_file("params.json"))
+stop_for_status(API_response)
+json <- content(API_response, "text",encoding = "UTF-8")
+API_data <- fromJSON(json,flatten=T)
+```
+
+Now paginate through the rest of the data, we're going to be here for a while...
+
+```{r, eval=FALSE}
+i<-1
+
+while(API_data$page_metadata$has_next_page==TRUE){
+  API_response <- httr::POST(paste0(url, "&page=", i),body = upload_file("params.json"))
+  message("Retrieving page ", i)
+  stop_for_status(API_response)
+  json <- content(API_response, "text",encoding = "UTF-8")
+  API_data <- fromJSON(json,flatten=T)
+  pages[[i]] <- API_data$results
+  i<-i+1
+}
+```
+
+Now bind the data into a dataframe and write it to a csv in your working directory
+
+```{r, eval=FALSE}
+data_pull<-bind_rows(pages)
+write.csv(data_pull, file = "transactions_data.csv",row.names = FALSE)
+```
+
+To include filters in your POST request simply add them to the json file used in the *body* parameter.  
+  
+Below is an example of a json file that includes filters. In this example, we will filter and retrieve records where the recipient is equal to GENERAL ELECTRIC COMPANY  
+
+```{r,eval=FALSE}
+{
+  "verbose": true,
+  "order": ["id"],
+  "filters": [
+      {
+        "field": "recipient__recipient_name",
+        "operation": "equals",
+        "value": "GENERAL ELECTRIC COMPANY"
+      }
+    ]
+}
+```
+
+  
+## Accessing USA Spending data via a GET request in Python
+
+This script is written in python 3.6  
+
+First we load all relevant modules to run the script. In this script the limit of records to retrieve per page is set to 100. You may change this setting depending on your connection strength and the level of sophistication in the query you may be running  
+  
+
+```{python eval=FALSE}
+import pandas as pd
+from datetime import datetime, timedelta
+import time
+import requests
+import numpy as np
+import json
+import urllib
+from pandas.io.json import json_normalize
+```
+
+Verify the API connection and retrieve the first page of data.   
+
+```{python eval=FALSE}
+url ="https://api.usaspending.gov/api/v1/awards/?limit=100"
+r = requests.get(url, verify=False)
+r.raise_for_status()
+type(r)
+data = r.json() 
+meta = data['page_metadata']
+data = data['results']
+df_API_data = pd.io.json.json_normalize(data)
+```
+
+Now paginate through the rest of the data, you may want to take a nap...  
+
+```{python eval=FALSE}
+i=2
+while meta['has_next_page'] == True:
+    print("Retreiving page " + str(i)) 
+    r = requests.get(url + "?page=" + str(i) + "&limit=100", verify=False) 
+    r.raise_for_status()
+    data = r.json() 
+    meta = data['page_metadata'] #page 2's meta data now 
+    data = data['results']
+    df_page = pd.io.json.json_normalize(data)
+    df_API_data = pd.concat([df_tas_cats, df_page], axis=0)
+    del df_page
+    i = i + 1
+```
+
+We have retrieved the data, now lets drop any duplicate records and write the dataframe to a csv file in your working directory  
+
+```{python eval=FALSE}
+df_API_data.drop_duplicates(keep='first', inplace=True)
+
+path="YourFilePath/YourFileName.csv"
+df_API_data.to_csv(path, index=False, header=True)
+```
+  
+To apply filters to the GET request they can be included directly into the target url.   
+  
+For example, if we only need records that are of award type "A" and has a piid that equals "LB01" we can use the following url to filter on those two field/value combinations. The rest of the script remains unchanged     
+  
+```{python, eval=FALSE}
+url <- "https://api.usaspending.gov/api/v1/awards/?limit=100&type=A&piid=LB01"
+```
+## Accessing USA Spending data via a POST request in Python
+
+This script is written in python 3.6  
+
+First we load all relevant modules to run the script  
+
+```{python eval=FALSE}
+import pandas as pd
+from datetime import datetime, timedelta
+import time
+import requests
+import numpy as np
+import json
+import urllib
+from pandas.io.json import json_normalize
+```
+
+Set the url to the endpoint which will be the target of the request and attempt to retrieve the first page of data.  
+  
+The *params* variable is a list containing the specifics of the body of the request. This request is a general POST request which takes **ALL** fields within the endpoint for each record, even those hidden from a GET request. Other filters may be included in the body to pinpoint records of interest in your request  
+
+Also, the limit on records per page has been dropped significantly because each record is much larger due to the extra fields  
+
+```{python eval=FALSE}
+params = {"verbose" : "true"}
+
+url = "https://api.usaspending.gov/api/v1/awards/?limit=20"
+r = requests.post(url, data=params)
+print(r.status_code, r.reason)
+r.raise_for_status()
+r.headers
+r.request.headers
+
+data = r.json() 
+meta = data['page_metadata']
+data = data['results']
+df_API_data = pd.io.json.json_normalize(data) 
+```
+
+Like the GET request we now paginate through the endpoint, you may want to go grab a snack...  
+
+```{python eval=FALSE}
+i=2  
+while meta['has_next_page'] == True:
+    print("Retreiving page " + str(i)) 
+    r = requests.post(url + "&page=" + str(i), data=params) 
+    r.raise_for_status()
+    data = r.json() 
+    meta = data['page_metadata']  
+    data = data['results']
+    df_page = pd.io.json.json_normalize(data)
+    df_API_data = pd.concat([df_trans, df_page], axis=0)
+    del df_page
+    i = i + 1
+```
+
+Drop any duplicate records and write the dataframe to a csv file in your local directory    
+
+```{python eval=FALSE}
+df_API_data.drop_duplicates(keep='first', inplace=True)
+
+path="YourFilePath/YourFileName.csv"
+df_API_data.to_csv(path, index=False, header=True)
+```
+  
+To include filters in your POST request we must change params into a json format with the filters you want to include in the body of the request, notice the function parameter *data=params* has changed to *json=params* the rest of the script will remain the same 
+  
+Below is an example of a request which will filter for and retrieve records that are a Project Grant provided to a recipient who will perform some function in Cook county  
+  
+```{python eval=FALSE}
+params = {
+        "verbose" : "true", 
+
+        "filters": [
+          {"field": "place_of_performance__county_name",
+            "operation": "equals",
+            "value": "COOK"},
+
+          {"combine_method" : "AND",
+           "filters" : [
+                   {"field": "type_description",
+                   "operation": "equals",
+                   "value": "Project Grant"}]
+          }
+       ]
+}
+
+url = base_url + endpt_trans + "?limit=20"
+r = requests.post(url, json=params)
+print(r.status_code, r.reason)
+r.raise_for_status()
+r.headers
+r.request.headers
+
+data = r.json() 
+meta = data['page_metadata']
+data = data['results']
+df_trans = pd.io.json.json_normalize(data) 
+```
+
+Other arguments may be included in the body of the request to further pinpoint records of interest.
+
+**exclude** - *Optional* - What fields to exclude from the return. Must be a list    
+  
+**fields** - *Optional* - What fields to return. Must be a list. Omitting this will return all fields    
+  
+**order** - *Optional* - Specify the ordering of the results. This should always be a list, even if it is only of length one. It will order by the first entry, then the second, then the third, and so on in order. This defaults to ascending. To get descending order, put a - in front of the field name. For example, to sort descending on awarding_agency__name, put -awarding_agency__name in the list    
+  
+**verbose** - *Optional* - Endpoints that return lists of items (/awards/ and /accounts/, for example) return a default list of fields. To instead return all fields, set this value to true. Note that you can also use the fields and exclude options to override the default field list. Default: false    
+  
+**filters** - *Optional* - An array of objects specifying how to filter the dataset. When multiple filters are specified in the root list, they will be joined via *AND*      
+  
+**field** - A string specifying the field to compare the value to. This supports Django's foreign key relationship traversal; therefore, funding_agency__fpds_code will filter on the field fpds_code for the referenced object stored in funding_agency  
+  
+**operation** - The operation to use to compare the field to the value. Some operations place requirements upon the data type in the values parameter, noted below. To negate an operation, use not_. For example, not_equals or not_in  
+     
+We have provide a few examples below     
+```{python, eval=FALSE}
+
+params_2 = {
+        "verbose" : "true", 
+        "exclude" : ["awarding_agency"], #exclude must be a list
+        #order must be a list; ascending is default
+        "order"  : ["awarding_agency__toptier_agency__abbreviation", "-date_signed"], 
+        "filters": [
+          {"field": "place_of_performance__county_name",
+            "operation": "equals",
+            "value": "COOK"},
+
+          {"combine_method" : "AND",
+           "filters" : [
+                   {"field": "type_description",
+                   "operation": "equals",
+                   "value": "Project Grant"}]
+          }
+       ]
+}
+
+params_3 = {
+        "fields" : ['category',
+                    'certified_date',
+                    'create_date',
+                    'data_source',
+                    'date_signed',
+                    'date_signed__fy',
+                    'description',
+                    'fain'],
+        "filters": [
+          {"field": "date_signed",
+            "operation": "equals",
+            "value": "2017-02-24"}]
+}
+```
+  
+    

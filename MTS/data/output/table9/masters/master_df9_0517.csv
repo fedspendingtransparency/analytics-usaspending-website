@@ -1,0 +1,546 @@
+amt,fytd,comp_per_pfy,fy,month,rec,outlay,source_func_parent
+181230.0,532792.0,514847.0,2016,1,True,False,Individual Income Taxes
+7194.0,92093.0,104500.0,2016,1,True,False,Corporation Income Taxes
+99198.0,331894.0,315880.0,2016,1,True,False,Social Insurance and Retirement Receipts
+2214.0,9543.0,9690.0,2016,1,True,False,Social Insurance and Retirement Receipts
+298.0,1276.0,1196.0,2016,1,True,False,Social Insurance and Retirement Receipts
+6122.0,25991.0,26441.0,2016,1,True,False,Excise Taxes
+1270.0,7303.0,6260.0,2016,1,True,False,Estate andGift Taxes
+3047.0,12260.0,12264.0,2016,1,True,False,CustomsDuties
+13005.0,66071.0,55146.0,2016,1,True,False,Miscellaneous Receipts
+313579.0,1079224.0,1046224.0,2016,1,True,False,Total
+39886.0,200333.0,204562.0,2016,1,False,True,National Defense
+3733.0,15047.0,19215.0,2016,1,False,True,International Affairs
+2028.0,9916.0,9729.0,2016,1,False,True,"General Science, Space, and Technology"
+-104.0,1290.0,2805.0,2016,1,False,True,Energy
+2905.0,11973.0,11574.0,2016,1,False,True,Natural Resources and Environment
+1833.0,19090.0,15987.0,2016,1,False,True,Agriculture
+708.0,-2030.0,-9440.0,2016,1,False,True,Commerce and Housing Credit
+5570.0,28058.0,28066.0,2016,1,False,True,Transportation
+1384.0,6425.0,7704.0,2016,1,False,True,Community and Regional Development
+10811.0,31580.0,28847.0,2016,1,False,True,"Education, Training, Employment, and Social Services"
+38377.0,162221.0,153058.0,2016,1,False,True,Health
+44270.0,187038.0,200604.0,2016,1,False,True,Medicare
+29056.0,141686.0,160587.0,2016,1,False,True,Income Security
+49778.0,300864.0,289252.0,2016,1,False,True,Social Security
+6815.0,55452.0,58001.0,2016,1,False,True,Veterans Benefits and Services
+3934.0,17524.0,17077.0,2016,1,False,True,Administration of Justice
+2135.0,6346.0,1924.0,2016,1,False,True,General Government
+20726.0,83531.0,77234.0,2016,1,False,True,Net Interest
+-5430.0,-36729.0,-36347.0,2016,1,False,True,Undistributed Offsetting Receipts
+258416.0,1239615.0,1240437.0,2016,1,False,True,Total
+-55163.0,0.0,0.0,2016,1,False,False,Deficit
+0.0,160391.0,0.0,2016,1,False,False,Deficit
+139537.0,352837.0,351562.0,2016,12,True,False,Individual Income Taxes
+72811.0,75731.0,84899.0,2016,12,True,False,Corporation Income Taxes
+86421.0,244588.0,232696.0,2016,12,True,False,Social Insurance and Retirement Receipts
+375.0,6498.0,7329.0,2016,12,True,False,Social Insurance and Retirement Receipts
+399.0,1046.0,977.0,2016,12,True,False,Social Insurance and Retirement Receipts
+6438.0,19376.0,19869.0,2016,12,True,False,Excise Taxes
+1931.0,4806.0,6033.0,2016,12,True,False,Estate andGift Taxes
+2846.0,8812.0,9213.0,2016,12,True,False,CustomsDuties
+8446.0,27077.0,53067.0,2016,12,True,False,Miscellaneous Receipts
+319204.0,740771.0,765645.0,2016,12,True,False,Total
+56918.0,156966.0,160447.0,2016,12,False,True,National Defense
+2497.0,12253.0,11314.0,2016,12,False,True,International Affairs
+3122.0,8034.0,7888.0,2016,12,False,True,"General Science, Space, and Technology"
+177.0,1038.0,1394.0,2016,12,False,True,Energy
+3839.0,9861.0,9068.0,2016,12,False,True,Natural Resources and Environment
+3010.0,20191.0,17257.0,2016,12,False,True,Agriculture
+-7834.0,-10561.0,-2738.0,2016,12,False,True,Commerce and Housing Credit
+8021.0,22895.0,22489.0,2016,12,False,True,Transportation
+2211.0,6929.0,5040.0,2016,12,False,True,Community and Regional Development
+7590.0,18380.0,20769.0,2016,12,False,True,"Education, Training, Employment, and Social Services"
+49366.0,133393.0,123844.0,2016,12,False,True,Health
+45848.0,127073.0,142768.0,2016,12,False,True,Medicare
+47914.0,106049.0,112629.0,2016,12,False,True,Income Security
+77036.0,231447.0,251086.0,2016,12,False,True,Social Security
+22340.0,43835.0,48636.0,2016,12,False,True,Veterans Benefits and Services
+4907.0,14207.0,13590.0,2016,12,False,True,Administration of Justice
+1824.0,5855.0,4208.0,2016,12,False,True,General Government
+24056.0,72650.0,62805.0,2016,12,False,True,Net Interest
+-6123.0,-31365.0,-31298.0,2016,12,False,True,Undistributed Offsetting Receipts
+346720.0,949130.0,981196.0,2016,12,False,True,Total
+27516.0,0.0,0.0,2016,12,False,False,Deficit
+0.0,208359.0,0.0,2016,12,False,False,Deficit
+91724.0,213300.0,202835.0,2016,11,True,False,Individual Income Taxes
+643.0,2920.0,7928.0,2016,11,True,False,Corporation Income Taxes
+81855.0,158166.0,154824.0,2016,11,True,False,Social Insurance and Retirement Receipts
+3401.0,6123.0,6985.0,2016,11,True,False,Social Insurance and Retirement Receipts
+321.0,647.0,607.0,2016,11,True,False,Social Insurance and Retirement Receipts
+7231.0,12938.0,13146.0,2016,11,True,False,Excise Taxes
+1550.0,2875.0,3845.0,2016,11,True,False,Estate andGift Taxes
+2897.0,5966.0,6322.0,2016,11,True,False,CustomsDuties
+10255.0,18631.0,19521.0,2016,11,True,False,Miscellaneous Receipts
+199875.0,421567.0,416014.0,2016,11,True,False,Total
+48021.0,100048.0,103857.0,2016,11,False,True,National Defense
+5512.0,9756.0,7310.0,2016,11,False,True,International Affairs
+2557.0,4912.0,4752.0,2016,11,False,True,"General Science, Space, and Technology"
+643.0,861.0,547.0,2016,11,False,True,Energy
+3240.0,6022.0,5632.0,2016,11,False,True,Natural Resourcesand Environment
+5299.0,17181.0,13685.0,2016,11,False,True,Agriculture
+-638.0,-2727.0,1639.0,2016,11,False,True,Commerce and Housing Credit
+7652.0,14874.0,14094.0,2016,11,False,True,Transportation
+2339.0,4717.0,3209.0,2016,11,False,True,Community and Regional Development
+6812.0,10790.0,13251.0,2016,11,False,True,"Education, Training, Employment, and Social Services"
+43370.0,84027.0,79891.0,2016,11,False,True,Health
+57589.0,81225.0,98765.0,2016,11,False,True,Medicare
+36830.0,58135.0,65477.0,2016,11,False,True,IncomeSecurity
+76791.0,154411.0,149457.0,2016,11,False,True,SocialSecurity
+14085.0,21495.0,27536.0,2016,11,False,True,Veterans Benefits and Services
+4798.0,9300.0,8799.0,2016,11,False,True,Administration of Justice
+2109.0,4031.0,2920.0,2016,11,False,True,General Government
+25191.0,48594.0,41373.0,2016,11,False,True,Net Interest
+-5675.0,-25242.0,-25073.0,2016,11,False,True,Undistributed Offsetting Receipts
+336526.0,602410.0,617121.0,2016,11,False,True,Total
+136651.0,0.0,0.0,2016,11,False,False,Deficit
+0.0,180843.0,0.0,2016,11,False,False,Deficit
+121576.0,121576.0,109220.0,2016,10,True,False,Individual Income Taxes
+2277.0,2277.0,4256.0,2016,10,True,False,Corporation Income Taxes
+76312.0,76312.0,74382.0,2016,10,True,False,Social Insurance and Retirement Receipts
+2723.0,2723.0,2156.0,2016,10,True,False,Social Insurance and Retirement Receipts
+326.0,326.0,311.0,2016,10,True,False,Social Insurance and Retirement Receipts
+5707.0,5707.0,5577.0,2016,10,True,False,Excise Taxes
+1326.0,1326.0,2132.0,2016,10,True,False,Estate and Gift Taxes
+3069.0,3069.0,3435.0,2016,10,True,False,CustomsDuties
+8376.0,8376.0,9577.0,2016,10,True,False,Miscellaneous Receipts
+221692.0,221692.0,211046.0,2016,10,True,False,Total
+52027.0,52027.0,60443.0,2016,10,False,True,National Defense
+4244.0,4244.0,2329.0,2016,10,False,True,International Affairs
+2355.0,2355.0,2327.0,2016,10,False,True,"General Science, Space, and Technology"
+218.0,218.0,221.0,2016,10,False,True,Energy
+2782.0,2782.0,2265.0,2016,10,False,True,Natural Resourcesand Environment
+11882.0,11882.0,7284.0,2016,10,False,True,Agriculture
+-2089.0,-2089.0,879.0,2016,10,False,True,Commerce and Housing Credit
+7222.0,7222.0,5756.0,2016,10,False,True,Transportation
+2378.0,2378.0,1559.0,2016,10,False,True,Community and Regional Development
+3978.0,3978.0,5895.0,2016,10,False,True,"Education, Training, Employment, and Social Services"
+40656.0,40656.0,42421.0,2016,10,False,True,Health
+23636.0,23636.0,75411.0,2016,10,False,True,Medicare
+21305.0,21305.0,37664.0,2016,10,False,True,IncomeSecurity
+77620.0,77620.0,74758.0,2016,10,False,True,SocialSecurity
+7410.0,7410.0,20632.0,2016,10,False,True,Veterans Benefits and Services
+4502.0,4502.0,4489.0,2016,10,False,True,Administration of Justice
+1923.0,1923.0,2462.0,2016,10,False,True,General Government
+23403.0,23403.0,20005.0,2016,10,False,True,Net Interest
+-19567.0,-19567.0,-19197.0,2016,10,False,True,Undistributed Offsetting Receipts
+265884.0,265884.0,347604.0,2016,10,False,True,Total
+44192.0,0.0,0.0,2016,10,False,False,Deficit
+0.0,44192.0,0.0,2016,10,False,False,Deficit
+159628.0,1546075.0,1540802.0,2016,9,True,False,Individual Income Taxes
+66492.0,299571.0,343797.0,2016,9,True,False,Corporation Income Taxes
+92481.0,1062305.0,1010426.0,2016,9,True,False,Social Insurance and Retirement Receipts
+487.0,48853.0,51177.0,2016,9,True,False,Social Insurance and Retirement Receipts
+317.0,3905.0,3651.0,2016,9,True,False,Social Insurance and Retirement Receipts
+22566.0,95045.0,98279.0,2016,9,True,False,Excise Taxes
+1479.0,21354.0,19232.0,2016,9,True,False,Estate and Gift Taxes
+3145.0,34837.0,35041.0,2016,9,True,False,Customs Duties
+9942.0,154743.0,146295.0,2016,9,True,False,Miscellaneous Receipts
+356537.0,3266688.0,3248701.0,2016,9,True,False,Total
+60292.0,595303.0,591372.0,2016,9,False,True,National Defense
+7843.0,45304.0,48784.0,2016,9,False,True,International Affairs
+2808.0,30230.0,29468.0,2016,9,False,True,"General Science, Space, and Technology"
+1192.0,3749.0,6910.0,2016,9,False,True,Energy
+3776.0,37792.0,33988.0,2016,9,False,True,Natural Resources and Environment
+-2173.0,20175.0,20229.0,2016,9,False,True,Agriculture
+-12134.0,-32789.0,-38335.0,2016,9,False,True,Commerce and Housing Credit
+10931.0,92941.0,90021.0,2016,9,False,True,Transportation
+2474.0,21052.0,21649.0,2016,9,False,True,Community and Regional Development
+8485.0,108058.0,120391.0,2016,9,False,True,"Education, Training, Employment, and Social Services"
+45477.0,511320.0,482162.0,2016,9,False,True,Health
+69093.0,594535.0,546203.0,2016,9,False,True,Medicare
+43019.0,514583.0,509432.0,2016,9,False,True,Income Security
+76779.0,916078.0,887748.0,2016,9,False,True,Social Security
+21273.0,174515.0,159739.0,2016,9,False,True,Veterans Benefits and Services
+5068.0,57144.0,53582.0,2016,9,False,True,Administration of Justice
+2212.0,18640.0,16922.0,2016,9,False,True,General Government
+-16966.0,240722.0,223330.0,2016,9,False,True,Net Interest
+-6271.0,-95251.0,-115803.0,2016,9,False,True,Undistributed Offsetting Receipts
+323178.0,3854100.0,3687790.0,2016,9,False,True,Total
+-33359.0,0.0,0.0,2016,9,False,False,Deficit
+0.0,587412.0,0.0,2016,9,False,False,Deficit
+114957.0,1386447.0,1379255.0,2016,8,True,False,Individual Income Taxes
+1137.0,233079.0,268387.0,2016,8,True,False,Corporation Income Taxes
+82095.0,969824.0,923185.0,2016,8,True,False,Social Insurance and Retirement Receipts
+6731.0,48366.0,50969.0,2016,8,True,False,Social Insurance and Retirement Receipts
+358.0,3588.0,3347.0,2016,8,True,False,Social Insurance and Retirement Receipts
+7448.0,72480.0,74732.0,2016,8,True,False,Excise Taxes
+1762.0,19875.0,17687.0,2016,8,True,False,Estate and Gift Taxes
+2953.0,31692.0,31843.0,2016,8,True,False,Customs Duties
+13886.0,144801.0,133845.0,2016,8,True,False,Miscellaneous Receipts
+231327.0,2910151.0,2883250.0,2016,8,True,False,Total
+48666.0,535011.0,536294.0,2016,8,False,True,National Defense
+2786.0,37461.0,42521.0,2016,8,False,True,International Affairs
+2777.0,27422.0,26616.0,2016,8,False,True,"General Science, Space, and Technology"
+-372.0,2557.0,5891.0,2016,8,False,True,Energy
+3569.0,34017.0,30307.0,2016,8,False,True,Natural Resources and Environment
+425.0,22348.0,21462.0,2016,8,False,True,Agriculture
+3756.0,-20656.0,-22430.0,2016,8,False,True,Commerce and Housing Credit
+10071.0,82010.0,79189.0,2016,8,False,True,Transportation
+2142.0,18577.0,19662.0,2016,8,False,True,Community and Regional Development
+9794.0,99573.0,108678.0,2016,8,False,True,"Education, Training, Employment, and Social Services"
+46477.0,465843.0,444180.0,2016,8,False,True,Health
+54755.0,525443.0,501114.0,2016,8,False,True,Medicare
+35972.0,471564.0,473313.0,2016,8,False,True,Income Security
+76668.0,839299.0,813180.0,2016,8,False,True,Social Security
+14306.0,153241.0,145688.0,2016,8,False,True,Veterans Benefits and Services
+5575.0,52076.0,48933.0,2016,8,False,True,Administration of Justice
+1393.0,16427.0,13761.0,2016,8,False,True,General Government
+26270.0,257688.0,234680.0,2016,8,False,True,Net Interest
+-6593.0,-88980.0,-109828.0,2016,8,False,True,Undistributed Offsetting Receipts
+338438.0,3530922.0,3413210.0,2016,8,False,True,Total
+107111.0,0.0,0.0,2016,8,False,False,Deficit
+0.0,620771.0,0.0,2016,8,False,False,Deficit
+99867.0,1271490.0,1276630.0,2016,7,True,False,Individual Income Taxes
+8554.0,231942.0,266068.0,2016,7,True,False,Corporation Income Taxes
+80169.0,887729.0,845762.0,2016,7,True,False,Social Insurance and Retirement Receipts
+1865.0,41636.0,45583.0,2016,7,True,False,Social Insurance and Retirement Receipts
+376.0,3229.0,3029.0,2016,7,True,False,Social Insurance and Retirement Receipts
+6077.0,65031.0,66966.0,2016,7,True,False,Excise Taxes
+1571.0,18113.0,16422.0,2016,7,True,False,Estate and Gift Taxes
+3059.0,28739.0,29936.0,2016,7,True,False,Customs Duties
+8461.0,130915.0,122018.0,2016,7,True,False,Miscellaneous Receipts
+209998.0,2678824.0,2672414.0,2016,7,True,False,Total
+46891.0,486345.0,495853.0,2016,7,False,True,National Defense
+3335.0,34675.0,39145.0,2016,7,False,True,International Affairs
+2524.0,24645.0,24063.0,2016,7,False,True,"General Science, Space, and Technology"
+0.0,2929.0,6140.0,2016,7,False,True,Energy
+3044.0,30448.0,27059.0,2016,7,False,True,Natural Resources and Environment
+532.0,21923.0,20719.0,2016,7,False,True,Agriculture
+2144.0,-24412.0,-22119.0,2016,7,False,True,Commerce and Housing Credit
+7782.0,71939.0,70693.0,2016,7,False,True,Transportation
+1691.0,16436.0,17656.0,2016,7,False,True,Community and Regional Development
+6027.0,89778.0,100182.0,2016,7,False,True,"Education, Training, Employment, and Social Services"
+45126.0,419366.0,398033.0,2016,7,False,True,Health
+50171.0,470687.0,476892.0,2016,7,False,True,Medicare
+34771.0,435588.0,446190.0,2016,7,False,True,Income Security
+76734.0,762631.0,738492.0,2016,7,False,True,Social Security
+14600.0,138935.0,138394.0,2016,7,False,True,Veterans Benefits and Services
+4453.0,46501.0,43702.0,2016,7,False,True,Administration of Justice
+1898.0,15041.0,11295.0,2016,7,False,True,General Government
+27969.0,231418.0,209314.0,2016,7,False,True,Net Interest
+-6879.0,-82387.0,-103741.0,2016,7,False,True,Undistributed Offsetting Receipts
+322813.0,3192487.0,3137961.0,2016,7,False,True,Total
+,,,2016,7,False,True,". (**) Less than absolute value of $500,000"
+112815.0,0.0,0.0,2016,7,False,False,Deficit
+0.0,513663.0,0.0,2016,7,False,False,Deficit
+133828.0,1171623.0,1167500.0,2016,6,True,False,Individual Income Taxes
+61272.0,223388.0,255453.0,2016,6,True,False,Corporation Income Taxes
+110489.0,807560.0,771048.0,2016,6,True,False,Social Insurance and Retirement Receipts
+279.0,39770.0,42084.0,2016,6,True,False,Social Insurance and Retirement Receipts
+306.0,2854.0,2680.0,2016,6,True,False,Social Insurance and Retirement Receipts
+6910.0,58954.0,60087.0,2016,6,True,False,Excise Taxes
+1678.0,16543.0,15112.0,2016,6,True,False,Estate andGift Taxes
+2781.0,25680.0,26334.0,2016,6,True,False,Customs Duties
+12028.0,122455.0,106622.0,2016,6,True,False,Miscellaneous Receipts
+329572.0,2468827.0,2446920.0,2016,6,True,False,Total
+48815.0,439454.0,444385.0,2016,6,False,True,National Defense
+3152.0,31341.0,36523.0,2016,6,False,True,International Affairs
+2591.0,22121.0,21427.0,2016,6,False,True,"General Science, Space, and Technology"
+736.0,2928.0,5363.0,2016,6,False,True,Energy
+3482.0,27404.0,24191.0,2016,6,False,True,Natural Resources and Environment
+354.0,21391.0,20197.0,2016,6,False,True,Agriculture
+-4085.0,-26556.0,-22735.0,2016,6,False,True,Commerce and Housing Credit
+8585.0,64156.0,61841.0,2016,6,False,True,Transportation
+1726.0,14745.0,15903.0,2016,6,False,True,Community and Regional Development
+14537.0,83752.0,84242.0,2016,6,False,True,"Education, Training, Employment, and Social Services"
+42627.0,374240.0,351362.0,2016,6,False,True,Health
+45715.0,420516.0,403051.0,2016,6,False,True,Medicare
+32215.0,400817.0,401462.0,2016,6,False,True,Income Security
+80860.0,685898.0,663942.0,2016,6,False,True,Social Security
+13623.0,124335.0,118022.0,2016,6,False,True,Veterans Benefits and Services
+4896.0,42048.0,39311.0,2016,6,False,True,Administration of Justice
+2500.0,13142.0,10376.0,2016,6,False,True,General Government
+27108.0,203449.0,181833.0,2016,6,False,True,Net Interest
+-6117.0,-75508.0,-97415.0,2016,6,False,True,Undistributed Offsetting Receipts
+323320.0,2869674.0,2763281.0,2016,6,False,True,Total
+-6252.0,0.0,0.0,2016,6,False,False,Deficit
+0.0,400847.0,0.0,2016,6,False,False,Deficit
+103981.0,1048691.0,1037796.0,2017,5,True,False,Individual Income Taxes
+5935.0,165890.0,162116.0,2017,5,True,False,Corporation Income Taxes
+88669.0,737196.0,697071.0,2017,5,True,False,Social Insurance and Retirement Receipts
+17431.0,36948.0,39491.0,2017,5,True,False,Social Insurance and Retirement Receipts
+325.0,2729.0,2547.0,2017,5,True,False,Social Insurance and Retirement Receipts
+8123.0,49968.0,52044.0,2017,5,True,False,Excise Taxes
+2015.0,16504.0,14864.0,2017,5,True,False,Estate and Gift Taxes
+2421.0,22367.0,22899.0,2017,5,True,False,Customs Duties
+11516.0,88867.0,110426.0,2017,5,True,False,Miscellaneous Receipts
+240418.0,2169160.0,2139254.0,2017,5,True,False,Total
+48963.0,390200.0,390639.0,2017,5,False,True,National Defense
+3302.0,33200.0,28189.0,2017,5,False,True,International Affairs
+2506.0,19730.0,19530.0,2017,5,False,True,"General Science, Space, and Technology"
+75.0,2592.0,2192.0,2017,5,False,True,Energy
+2538.0,22817.0,23922.0,2017,5,False,True,Natural Resources and Environment
+27.0,22234.0,21037.0,2017,5,False,True,Agriculture
+1329.0,-22432.0,-24151.0,2017,5,False,True,Commerce and Housing Credit
+7451.0,56404.0,55571.0,2017,5,False,True,Transportation
+1383.0,15858.0,13019.0,2017,5,False,True,Community and Regional Development
+7226.0,65795.0,69215.0,2017,5,False,True,"Education, Training, Employment, and Social Services"
+43559.0,349759.0,331613.0,2017,5,False,True,Health
+51485.0,367626.0,374801.0,2017,5,False,True,Medicare
+39055.0,359790.0,368602.0,2017,5,False,True,Income Security
+78680.0,623334.0,605038.0,2017,5,False,True,Social Security
+14858.0,108145.0,110712.0,2017,5,False,True,Veterans Benefits and Services
+4154.0,38260.0,37152.0,2017,5,False,True,Administration of Justice
+3452.0,13289.0,10636.0,2017,5,False,True,General Government
+25020.0,197850.0,176341.0,2017,5,False,True,Net Interest
+-6217.0,-62439.0,-69391.0,2017,5,False,True,Undistributed Offsetting Receipts
+328844.0,2602013.0,2544667.0,2017,5,False,True,Total
+88426.0,0.0,0.0,2017,5,False,False,Deficit
+0.0,432853.0,0.0,2017,5,False,False,Deficit
+96956.0,1037796.0,1014673.0,2016,5,True,False,Individual Income Taxes
+4542.0,162116.0,182685.0,2016,5,True,False,Corporation Income Taxes
+82860.0,697071.0,675585.0,2016,5,True,False,Social Insurance and Retirement Receipts
+17786.0,39491.0,41675.0,2016,5,True,False,Social Insurance and Retirement Receipts
+304.0,2547.0,2391.0,2016,5,True,False,Social Insurance and Retirement Receipts
+6805.0,52044.0,52987.0,2016,5,True,False,Excise Taxes
+1492.0,14864.0,13858.0,2016,5,True,False,Estate and Gift Taxes
+2427.0,22899.0,23393.0,2016,5,True,False,Customs Duties
+11431.0,110426.0,96740.0,2016,5,True,False,Miscellaneous Receipts
+224603.0,2139254.0,2103987.0,2016,5,True,False,Total
+42258.0,390639.0,395067.0,2016,5,False,True,National Defense
+2846.0,28189.0,33020.0,2016,5,False,True,International Affairs
+2210.0,19530.0,18541.0,2016,5,False,True,"General Science, Space, and Technology"
+413.0,2192.0,4466.0,2016,5,False,True,Energy
+2765.0,23922.0,21051.0,2016,5,False,True,Natural Resources and Environment
+136.0,21037.0,19769.0,2016,5,False,True,Agriculture
+-137.0,-22471.0,-27761.0,2016,5,False,True,Commerce and Housing Credit
+7071.0,55610.0,53926.0,2016,5,False,True,Transportation
+1650.0,13019.0,14260.0,2016,5,False,True,Community and Regional Development
+7548.0,69215.0,67424.0,2016,5,False,True,"Education, Training, Employment, and Social Services"
+40129.0,331613.0,309278.0,2016,5,False,True,Health
+26092.0,374801.0,359156.0,2016,5,False,True,Medicare
+29954.0,368602.0,369208.0,2016,5,False,True,Income Security
+76396.0,605038.0,585068.0,2016,5,False,True,Social Security
+7142.0,110712.0,105084.0,2016,5,False,True,Veterans Benefits and Services
+4391.0,37152.0,34898.0,2016,5,False,True,Administration of Justice
+4482.0,10603.0,9572.0,2016,5,False,True,General Government
+27868.0,176341.0,159485.0,2016,5,False,True,Net Interest
+-6104.0,-69391.0,-60677.0,2016,5,False,True,Undistributed Offsetting Receipts
+277111.0,2546353.0,2470835.0,2016,5,False,True,Total
+52508.0,0.0,0.0,2016,5,False,False,Deficit
+0.0,407099.0,0.0,2016,5,False,False,Deficit
+249320.0,944710.0,940840.0,2017,4,True,False,Individual Income Taxes
+59721.0,159955.0,157574.0,2017,4,True,False,Corporation Income Taxes
+117523.0,648527.0,614211.0,2017,4,True,False,Social Insurance and Retirement Receipts
+5109.0,19516.0,21705.0,2017,4,True,False,Social Insurance and Retirement Receipts
+323.0,2403.0,2243.0,2017,4,True,False,Social Insurance and Retirement Receipts
+4358.0,41845.0,45239.0,2017,4,True,False,Excise Taxes
+4198.0,14489.0,13372.0,2017,4,True,False,Estate and Gift Taxes
+3009.0,19946.0,20471.0,2017,4,True,False,Customs Duties
+12045.0,77351.0,98995.0,2017,4,True,False,Miscellaneous Receipts
+455605.0,1928742.0,1914651.0,2017,4,True,False,Total
+40373.0,341237.0,348381.0,2017,4,False,True,National Defense
+4188.0,29898.0,25342.0,2017,4,False,True,International Affairs
+2238.0,17225.0,17320.0,2017,4,False,True,"General Science, Space, and Technology"
+24.0,2518.0,1780.0,2017,4,False,True,Energy
+1922.0,20279.0,21157.0,2017,4,False,True,Natural Resources and Environment
+20.0,22207.0,20901.0,2017,4,False,True,Agriculture
+-787.0,-23761.0,-24014.0,2017,4,False,True,Commerce and Housing Credit
+5986.0,48952.0,48539.0,2017,4,False,True,Transportation
+1543.0,14476.0,11369.0,2017,4,False,True,Community and Regional Development
+7356.0,58569.0,61666.0,2017,4,False,True,"Education, Training, Employment, and Social Services"
+39612.0,306201.0,291484.0,2017,4,False,True,Health
+22368.0,316140.0,348709.0,2017,4,False,True,Medicare
+35956.0,320735.0,338648.0,2017,4,False,True,Income Security
+78634.0,544654.0,528642.0,2017,4,False,True,Social Security
+7035.0,93287.0,103570.0,2017,4,False,True,Veterans Benefits and Services
+4239.0,34107.0,32761.0,2017,4,False,True,Administration of Justice
+943.0,9837.0,6115.0,2017,4,False,True,General Government
+27440.0,172830.0,148472.0,2017,4,False,True,Net Interest
+-5914.0,-56222.0,-63287.0,2017,4,False,True,Undistributed Offsetting Receipts
+273177.0,2273169.0,2267556.0,2017,4,False,True,Total
+-182428.0,0.0,0.0,2017,4,False,False,Deficit
+0.0,344427.0,0.0,2017,4,False,False,Deficit
+266172.0,940840.0,929638.0,2016,4,True,False,Individual Income Taxes
+35667.0,157574.0,175345.0,2016,4,True,False,Corporation Income Taxes
+109529.0,614211.0,596620.0,2016,4,True,False,Social Insurance and Retirement Receipts
+5426.0,21705.0,26471.0,2016,4,True,False,Social Insurance and Retirement Receipts
+306.0,2243.0,2105.0,2016,4,True,False,Social Insurance and Retirement Receipts
+5987.0,45239.0,45584.0,2016,4,True,False,Excise Taxes
+3148.0,13372.0,12156.0,2016,4,True,False,Estate and Gift Taxes
+2798.0,20471.0,20845.0,2016,4,True,False,Customs Duties
+9400.0,98995.0,82838.0,2016,4,True,False,Miscellaneous Receipts
+438432.0,1914651.0,1891601.0,2016,4,True,False,Total
+49325.0,348381.0,346830.0,2016,4,False,True,National Defense
+3169.0,25342.0,30690.0,2016,4,False,True,International Affairs
+2617.0,17320.0,16433.0,2016,4,False,True,"General Science, Space, and Technology"
+174.0,1780.0,4222.0,2016,4,False,True,Energy
+2733.0,21157.0,18571.0,2016,4,False,True,Natural Resources and Environment
+46.0,20901.0,19584.0,2016,4,False,True,Agriculture
+-10073.0,-22334.0,-16570.0,2016,4,False,True,Commerce and Housing Credit
+6369.0,48539.0,46839.0,2016,4,False,True,Transportation
+1640.0,11369.0,12808.0,2016,4,False,True,Community and Regional Development
+7697.0,61666.0,60193.0,2016,4,False,True,"Education, Training, Employment, and Social Services"
+40566.0,291484.0,271616.0,2016,4,False,True,Health
+68384.0,348709.0,313250.0,2016,4,False,True,Medicare
+51919.0,338648.0,331934.0,2016,4,False,True,Income Security
+76382.0,528642.0,510577.0,2016,4,False,True,Social Security
+20050.0,103570.0,92139.0,2016,4,False,True,Veterans Benefits and Services
+4578.0,32761.0,30883.0,2016,4,False,True,Administration of Justice
+-1876.0,6121.0,7419.0,2016,4,False,True,General Government
+22234.0,148472.0,131950.0,2016,4,False,True,Net Interest
+-13952.0,-63287.0,-54998.0,2016,4,False,True,Undistributed Offsetting Receipts
+331980.0,2269242.0,2174372.0,2016,4,False,True,Total
+-106452.0,0.0,0.0,2016,4,False,False,Deficit
+0.0,354591.0,0.0,2016,4,False,False,Deficit
+84072.0,695391.0,674668.0,2017,3,True,False,Individual Income Taxes
+12879.0,100234.0,121907.0,2017,3,True,False,Corporation Income Taxes
+95316.0,531003.0,504682.0,2017,3,True,False,Social Insurance and Retirement Receipts
+388.0,14407.0,16280.0,2017,3,True,False,Social Insurance and Retirement Receipts
+342.0,2081.0,1938.0,2017,3,True,False,Social Insurance and Retirement Receipts
+7633.0,37488.0,39252.0,2017,3,True,False,Excise Taxes
+1976.0,10290.0,10224.0,2017,3,True,False,Estate andGift Taxes
+2667.0,16936.0,17674.0,2017,3,True,False,Customs Duties
+11310.0,65306.0,89596.0,2017,3,True,False,Miscellaneous Receipts
+216584.0,1473137.0,1476218.0,2017,3,True,False,Total
+57692.0,300864.0,299056.0,2017,3,False,True,National Defense
+4363.0,25710.0,22174.0,2017,3,False,True,International Affairs
+2568.0,14987.0,14704.0,2017,3,False,True,"General Science, Space, and Technology"
+886.0,2494.0,1605.0,2017,3,False,True,Energy
+2220.0,18358.0,18424.0,2017,3,False,True,Natural Resources and Environment
+145.0,22187.0,20855.0,2017,3,False,True,Agriculture
+-14068.0,-22975.0,-13941.0,2017,3,False,True,Commerce and Housing Credit
+7821.0,42967.0,42170.0,2017,3,False,True,Transportation
+1883.0,12933.0,9729.0,2017,3,False,True,Community and Regional Development
+10573.0,51213.0,53970.0,2017,3,False,True,"Education, Training, Employment, and Social Services"
+46508.0,266589.0,250918.0,2017,3,False,True,Health
+75345.0,293773.0,280325.0,2017,3,False,True,Medicare
+65373.0,284780.0,286729.0,2017,3,False,True,Income Security
+78523.0,466019.0,452261.0,2017,3,False,True,Social Security
+20679.0,86252.0,83520.0,2017,3,False,True,Veterans Benefits and Services
+5758.0,29867.0,28183.0,2017,3,False,True,Administration of Justice
+2902.0,8894.0,7995.0,2017,3,False,True,General Government
+29871.0,145389.0,126239.0,2017,3,False,True,Net Interest
+-6227.0,-50308.0,-49335.0,2017,3,False,True,Undistributed Offsetting Receipts
+392816.0,1999991.0,1935579.0,2017,3,False,True,Total
+176232.0,0.0,0.0,2017,3,False,False,Deficit
+0.0,526854.0,0.0,2017,3,False,False,Deficit
+77144.0,674668.0,641434.0,2016,3,True,False,Individual Income Taxes
+33271.0,121907.0,132114.0,2016,3,True,False,Corporation Income Taxes
+93938.0,504682.0,489887.0,2016,3,True,False,Social Insurance and Retirement Receipts
+467.0,16280.0,16975.0,2016,3,True,False,Social Insurance and Retirement Receipts
+333.0,1938.0,1804.0,2016,3,True,False,Social Insurance and Retirement Receipts
+6600.0,39252.0,39412.0,2016,3,True,False,Excise Taxes
+1601.0,10224.0,8911.0,2016,3,True,False,Estate andGift Taxes
+2873.0,17674.0,17416.0,2016,3,True,False,Customs Duties
+11622.0,89596.0,71847.0,2016,3,True,False,Miscellaneous Receipts
+227848.0,1476218.0,1419800.0,2016,3,True,False,Total
+54413.0,299056.0,298675.0,2016,3,False,True,National Defense
+3685.0,22174.0,28453.0,2016,3,False,True,International Affairs
+2375.0,14704.0,14190.0,2016,3,False,True,"General Science, Space, and Technology"
+489.0,1605.0,3515.0,2016,3,False,True,Energy
+3327.0,18424.0,16171.0,2016,3,False,True,Natural Resources and Environment
+447.0,20855.0,19022.0,2016,3,False,True,Agriculture
+-11205.0,-12261.0,-18651.0,2016,3,False,True,Commerce and Housing Credit
+7184.0,42170.0,40852.0,2016,3,False,True,Transportation
+1486.0,9729.0,11535.0,2016,3,False,True,Community and Regional Development
+9068.0,53970.0,51704.0,2016,3,False,True,"Education, Training, Employment, and Social Services"
+48800.0,250918.0,232556.0,2016,3,False,True,Health
+47889.0,280325.0,268535.0,2016,3,False,True,Medicare
+53228.0,286729.0,287027.0,2016,3,False,True,Income Security
+75698.0,452261.0,436477.0,2016,3,False,True,Social Security
+14233.0,83520.0,78719.0,2016,3,False,True,Veterans Benefits and Services
+4928.0,28183.0,26702.0,2016,3,False,True,Administration of Justice
+2145.0,7998.0,5979.0,2016,3,False,True,General Government
+23884.0,126239.0,106829.0,2016,3,False,True,Net Interest
+-6185.0,-49335.0,-49010.0,2016,3,False,True,Undistributed Offsetting Receipts
+335891.0,1937262.0,1859280.0,2016,3,False,True,Total
+108043.0,0.0,0.0,2016,3,False,False,Deficit
+0.0,461044.0,0.0,2016,3,False,False,Deficit
+61251.0,611318.0,597524.0,2017,2,True,False,Individual Income Taxes
+2478.0,87355.0,88636.0,2017,2,True,False,Corporation Income Taxes
+86404.0,435687.0,410744.0,2017,2,True,False,Social Insurance and Retirement Receipts
+2833.0,14020.0,15812.0,2017,2,True,False,Social Insurance and Retirement Receipts
+323.0,1738.0,1605.0,2017,2,True,False,Social Insurance and Retirement Receipts
+5362.0,29854.0,32652.0,2017,2,True,False,Excise Taxes
+1082.0,8315.0,8623.0,2017,2,True,False,Estate and Gift Taxes
+2490.0,14269.0,14800.0,2017,2,True,False,Customs Duties
+9491.0,53997.0,77974.0,2017,2,True,False,Miscellaneous Receipts
+171713.0,1256553.0,1248371.0,2017,2,True,False,Total
+45891.0,243172.0,244643.0,2017,2,False,True,National Defense
+4327.0,21347.0,18488.0,2017,2,False,True,International Affairs
+2296.0,12418.0,12328.0,2017,2,False,True,"General Science, Space, and Technology"
+160.0,1608.0,1116.0,2017,2,False,True,Energy
+2815.0,16138.0,15097.0,2017,2,False,True,Natural Resources and Environment
+612.0,22042.0,20408.0,2017,2,False,True,Agriculture
+-588.0,-10545.0,-2736.0,2017,2,False,True,Commerce and Housing Credit
+6082.0,35146.0,34985.0,2017,2,False,True,Transportation
+1734.0,11050.0,8244.0,2017,2,False,True,Community and Regional Development
+11642.0,40639.0,44901.0,2017,2,False,True,"Education, Training, Employment, and Social Services"
+43785.0,220081.0,202118.0,2017,2,False,True,Health
+45668.0,218428.0,232437.0,2017,2,False,True,Medicare
+86301.0,219406.0,233501.0,2017,2,False,True,Income Security
+77768.0,387497.0,376563.0,2017,2,False,True,Social Security
+14328.0,65573.0,69287.0,2017,2,False,True,Veterans Benefits and Services
+4063.0,24109.0,23255.0,2017,2,False,True,Administration of Justice
+1776.0,5992.0,5850.0,2017,2,False,True,General Government
+21176.0,115518.0,102355.0,2017,2,False,True,Net Interest
+-6079.0,-44081.0,-43150.0,2017,2,False,True,Undistributed Offsetting Receipts
+363757.0,1605537.0,1599689.0,2017,2,False,True,Total
+192044.0,0.0,0.0,2017,2,False,False,Deficit
+0.0,348984.0,0.0,2017,2,False,False,Deficit
+64732.0,597524.0,555461.0,2016,2,True,False,Individual Income Taxes
+-3457.0,88636.0,101634.0,2016,2,True,False,Corporation Income Taxes
+78850.0,410744.0,393090.0,2016,2,True,False,Social Insurance and Retirement Receipts
+6269.0,15812.0,16521.0,2016,2,True,False,Social Insurance and Retirement Receipts
+329.0,1605.0,1476.0,2016,2,True,False,Social Insurance and Retirement Receipts
+6661.0,32652.0,32853.0,2016,2,True,False,Excise Taxes
+1320.0,8623.0,7268.0,2016,2,True,False,Estate and Gift Taxes
+2540.0,14800.0,14789.0,2016,2,True,False,Customs Duties
+11902.0,77974.0,62521.0,2016,2,True,False,Miscellaneous Receipts
+169147.0,1248371.0,1185613.0,2016,2,True,False,Total
+44310.0,244643.0,249454.0,2016,2,False,True,National Defense
+3441.0,18488.0,23681.0,2016,2,False,True,International Affairs
+2412.0,12328.0,11770.0,2016,2,False,True,"General Science, Space, and Technology"
+-174.0,1116.0,2783.0,2016,2,False,True,Energy
+3123.0,15096.0,12916.0,2016,2,False,True,Natural Resources and Environment
+1317.0,20408.0,17780.0,2016,2,False,True,Agriculture
+973.0,-1057.0,-11691.0,2016,2,False,True,Commerce and Housing Credit
+6927.0,34985.0,33908.0,2016,2,False,True,Transportation
+1819.0,8244.0,9500.0,2016,2,False,True,Community and Regional Development
+13322.0,44901.0,41741.0,2016,2,False,True,"Education, Training, Employment, and Social Services"
+39897.0,202118.0,190020.0,2016,2,False,True,Health
+45399.0,232437.0,242958.0,2016,2,False,True,Medicare
+91822.0,233507.0,239908.0,2016,2,False,True,Income Security
+75699.0,376563.0,362596.0,2016,2,False,True,Social Security
+13835.0,69287.0,71010.0,2016,2,False,True,Veterans Benefits and Services
+5738.0,23255.0,20982.0,2016,2,False,True,Administration of Justice
+-502.0,5850.0,4346.0,2016,2,False,True,General Government
+18824.0,102355.0,91096.0,2016,2,False,True,Net Interest
+-6421.0,-43150.0,-42585.0,2016,2,False,True,Undistributed Offsetting Receipts
+361761.0,1601375.0,1572175.0,2016,2,False,True,Total
+192614.0,0.0,0.0,2016,2,False,False,Deficit
+0.0,353004.0,0.0,2016,2,False,False,Deficit
+197231.0,550068.0,532792.0,2017,1,True,False,Individual Income Taxes
+9146.0,84877.0,92093.0,2017,1,True,False,Corporation Income Taxes
+104695.0,349283.0,331894.0,2017,1,True,False,Social Insurance and Retirement Receipts
+4689.0,11187.0,9543.0,2017,1,True,False,Social Insurance and Retirement Receipts
+370.0,1416.0,1276.0,2017,1,True,False,Social Insurance and Retirement Receipts
+5116.0,24493.0,25991.0,2017,1,True,False,Excise Taxes
+2427.0,7233.0,7303.0,2017,1,True,False,Estate andGift Taxes
+2967.0,11779.0,12260.0,2017,1,True,False,CustomsDuties
+17428.0,44505.0,66071.0,2017,1,True,False,Miscellaneous Receipts
+344069.0,1084840.0,1079224.0,2017,1,True,False,Total
+40315.0,197281.0,200333.0,2017,1,False,True,National Defense
+4748.0,17020.0,15047.0,2017,1,False,True,International Affairs
+2089.0,10123.0,9916.0,2017,1,False,True,"General Science, Space, and Technology"
+410.0,1448.0,1290.0,2017,1,False,True,Energy
+3462.0,13323.0,11973.0,2017,1,False,True,Natural Resources and Environment
+1239.0,21430.0,19090.0,2017,1,False,True,Agriculture
+784.0,-9957.0,-2030.0,2017,1,False,True,Commerce and Housing Credit
+6168.0,29063.0,28058.0,2017,1,False,True,Transportation
+2387.0,9316.0,6425.0,2017,1,False,True,Community and Regional Development
+10617.0,28997.0,31580.0,2017,1,False,True,"Education, Training, Employment, and Social Services"
+42903.0,176296.0,162221.0,2017,1,False,True,Health
+45687.0,172760.0,187038.0,2017,1,False,True,Medicare
+27056.0,133105.0,141686.0,2017,1,False,True,Income Security
+78281.0,309728.0,300864.0,2017,1,False,True,Social Security
+7410.0,51245.0,55452.0,2017,1,False,True,Veterans Benefits and Services
+5840.0,20046.0,17518.0,2017,1,False,True,Administration of Justice
+-1639.0,4216.0,6349.0,2017,1,False,True,General Government
+21692.0,94342.0,83531.0,2017,1,False,True,Net Interest
+-6637.0,-38002.0,-36729.0,2017,1,False,True,Undistributed Offsetting Receipts
+292812.0,1241780.0,1239612.0,2017,1,False,True,Total
+-51257.0,0.0,0.0,2017,1,False,False,Deficit
+0.0,156940.0,0.0,2017,1,False,False,Deficit
