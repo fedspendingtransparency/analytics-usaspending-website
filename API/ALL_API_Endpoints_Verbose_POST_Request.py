@@ -115,59 +115,6 @@ cols_awards_verbose = df_awards.columns.tolist()
 
 
 
-
-
-
-#hard code it in to explore what's going on
-
-test_page = 12100
-print("Retreiving page " + str(test_page)) 
-r = requests.post(url + "?page=" + str(test_page) + "&limit=1", data=whatiwant)
-r.raise_for_status()
-
-
-
-print("Retreiving page " + str(121)) 
-r = requests.post(url + "?page=" + str(121) + "&limit=100", data=whatiwant)
-r.raise_for_status()
-
-
-print("Retreiving page " + str(122)) 
-r = requests.post(url + "?page=" + str(122) + "&limit=100", data=whatiwant)
-r.raise_for_status()
-
-print("Retreiving page " + str(123)) 
-r = requests.post(url + "?page=" + str(123) + "&limit=100", data=whatiwant)
-r.raise_for_status()
-
-
-print("Retreiving page " + str(12100)) 
-r = requests.post(url + "?page=" + str(12200) + "&limit=1", data=whatiwant)
-r.raise_for_status()
-
-
-
-
-
-data = r.json() 
-meta = data['page_metadata'] #page 2's meta data now 
-data = data['results']
-df_page = pd.io.json.json_normalize(data)
-df_awards = pd.concat([df_awards, df_page], axis=0)
-
-
-cols_awards_verbose = df_awards.columns.tolist()
-
-
-
-
-
-
-
-
-
-
-
 ################################################################################
 ################################################################################
 
@@ -283,32 +230,6 @@ while meta['has_next_page'] == True:
 cols_df_trans_verbose = df_trans.columns.tolist()
 
 ################################################################################
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
