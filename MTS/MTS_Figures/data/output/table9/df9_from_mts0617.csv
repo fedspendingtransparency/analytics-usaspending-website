@@ -1,0 +1,33 @@
+source_func,amt,fytd,comp_per_pfy,fy,month,rec,outlay,source_func_parent
+Individual Income Taxes,150546.0,1199238.0,1171623.0,2017,06,True,False,Individual Income Taxes
+Corporation Income Taxes,57371.0,223261.0,223388.0,2017,06,True,False,Corporation Income Taxes
+Employment and General Retirement,110250.0,847446.0,807560.0,2017,06,True,False,Social Insurance and Retirement Receipts
+Unemployment Insurance,334.0,37282.0,39770.0,2017,06,True,False,Social Insurance and Retirement Receipts
+Other Retirement,412.0,3141.0,2854.0,2017,06,True,False,Social Insurance and Retirement Receipts
+Excise Taxes,7418.0,57386.0,58954.0,2017,06,True,False,Excise Taxes
+Estate andGift Taxes,1459.0,17963.0,16543.0,2017,06,True,False,Estate andGift Taxes
+Customs Duties,2871.0,25238.0,25680.0,2017,06,True,False,Customs Duties
+Miscellaneous Receipts,7999.0,96866.0,122455.0,2017,06,True,False,Miscellaneous Receipts
+Total,338660.0,2507820.0,2468827.0,2017,06,True,False,Total
+National Defense,57805.0,448005.0,439454.0,2017,06,False,True,National Defense
+International Affairs,1140.0,34341.0,31341.0,2017,06,False,True,International Affairs
+"General Science, Space, and Technology",2828.0,22559.0,22121.0,2017,06,False,True,"General Science, Space, and Technology"
+Energy,707.0,3299.0,2928.0,2017,06,False,True,Energy
+Natural Resources and Environment,3215.0,26032.0,27404.0,2017,06,False,True,Natural Resources and Environment
+Agriculture,2.0,22235.0,21391.0,2017,06,False,True,Agriculture
+Commerceand Housing Credit,14807.0,-7625.0,-28236.0,2017,06,False,True,Commerceand Housing Credit
+Transportation,10072.0,66475.0,64156.0,2017,06,False,True,Transportation
+Community and Regional Development,1474.0,17332.0,14745.0,2017,06,False,True,Community and Regional Development
+"Education, Training, Employment, and Social Services",48324.0,114119.0,83752.0,2017,06,False,True,"Education, Training, Employment, and Social Services"
+Health,42661.0,392420.0,374240.0,2017,06,False,True,Health
+Medicare,73293.0,440919.0,420516.0,2017,06,False,True,Medicare
+Income Security,39953.0,399743.0,400817.0,2017,06,False,True,Income Security
+Social Security,83617.0,706948.0,685898.0,2017,06,False,True,Social Security
+Veterans Benefits and Services,23213.0,131358.0,124335.0,2017,06,False,True,Veterans Benefits and Services
+Administration of Justice,5329.0,43590.0,42048.0,2017,06,False,True,Administration of Justice
+General Government,1670.0,14959.0,13136.0,2017,06,False,True,General Government
+Net Interest,25729.0,223579.0,203449.0,2017,06,False,True,Net Interest
+Undistributed Offsetting Receipts,-6946.0,-69385.0,-75508.0,2017,06,False,True,Undistributed Offsetting Receipts
+Total,428894.0,3030903.0,2867988.0,2017,06,False,True,Total
+deficit for the month,90234.0,0.0,0.0,2017,06,False,False,Deficit
+deficit fytd,0.0,523083.0,0.0,2017,06,False,False,Deficit
