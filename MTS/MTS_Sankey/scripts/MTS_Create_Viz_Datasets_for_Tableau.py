@@ -59,13 +59,13 @@ os.listdir(os.getcwd()) #list out files in there as a sanity check
 
 """CHANGE ME! You will need to change this monthly."""
 
-curr_mo = "08" # Use two digits
+curr_mo = "01" # Use two digits
 curr_fy =    "17" # Use two digits
 
-prev_mo = "07"  # Use two digits
+prev_mo = "12"  # Use two digits
 prev_fy = "16"  # Use two digits
 
-path = monthly_dir + "/mts0817.xls" #replace the new MTS file name 
+path = monthly_dir + "/mts0117.xls" #replace the new MTS file name 
 
 
 
@@ -164,7 +164,7 @@ bool_vector = df9.loc[:,'source_func'] == "Unemployment Insurance"
 index_UI = df9[bool_vector].index.tolist()
 index_UI = index_UI[0]
 
-bool_vector = df9.loc[:,'source_func'] == "Other Retirement"
+bool_vector = (df9.loc[:,'source_func'] == "Other Retirement") | (df9.loc[:,'source_func'] == "OtherRetirement")
 index_OR = df9[bool_vector].index.tolist()
 index_OR = index_OR[0]
 
@@ -214,11 +214,24 @@ elif deficit_fytd > 0: #if we have a monthly deficit
 month_def_surp_label
 year_def_surp_label
 
+#Ensure sourece_parent_func represents surplus/deficit correctly
+if month_def_surp_label.startswith("deficit"):
+    month_def_surp_source_func_parent = "Deficit"
+else:
+    month_def_surp_source_func_parent = "Surplus"
+
+if year_def_surp_label.startswith("deficit"):
+    year_def_surp_source_func_parent = "Deficit"
+else:
+    year_def_surp_source_func_parent = "Surplus"
+
+month_def_surp_source_func_parent
+year_def_surp_source_func_parent
+
 #Now because the labels indicate whether its surplus or deficit, make the values positive 
 
-
-temp = pd.DataFrame( [[month_def_surp_label, np.abs(deficit_mo), 0, 0, "20" + str(path[-6:-4]), str(path[-8:-6]),False,False,"Deficit"],
-                     [year_def_surp_label, 0, np.abs(deficit_fytd),0,"20" + str(path[-6:-4]),str(path[-8:-6]),False,False,"Deficit"]],
+temp = pd.DataFrame( [[month_def_surp_label, np.abs(deficit_mo), 0, 0, "20" + str(path[-6:-4]), str(path[-8:-6]),False,False,month_def_surp_source_func_parent],
+                     [year_def_surp_label, 0, np.abs(deficit_fytd),0,"20" + str(path[-6:-4]),str(path[-8:-6]),False,False, year_def_surp_source_func_parent]],
     columns = ['source_func', 'amt', 'fytd', 'comp_per_pfy', 
                'fy', 'month', 'rec', 'outlay','source_func_parent'])
 
@@ -226,6 +239,8 @@ temp = pd.DataFrame( [[month_def_surp_label, np.abs(deficit_mo), 0, 0, "20" + st
 
 df9 = pd.concat([df9, temp], axis=0)
 df9.reset_index(drop=True, inplace=True)
+
+
 
 
 ### Create dataframe for the figure ------------------------------------------
@@ -244,7 +259,7 @@ for i in range(len(df_fig_cov)):
     elif df_fig_cov['outlay'][i]==True:
         df_fig_cov['amount_type'][i] = "Outlay"
     else:
-        df_fig_cov['amount_type'][i] = "Deficit"
+        df_fig_cov['amount_type'][i] = df_fig_cov['source_func_parent'][i]
 
 # Find index value for totals
 index_tot_rec = df_fig_cov[(df_fig_cov.loc[:, 'source_func']=="Total") & (df_fig_cov.loc[:, 'rec']==True)].index.tolist()[0]
@@ -261,28 +276,32 @@ df_fig_cov['source_func_parent'][index_tot_out] = "Total Outlays"
 
 #If receipts < outlays, then label deficit as total receipts 
     #so it'll pop up in that column in tableau
-    
-#Find index for deficit value
-index_def = df_fig_cov[(df_fig_cov.loc[:, 'source_func']==month_def_surp_label)].index.tolist()[0]
 
-if df_fig_cov['amt'][index_tot_rec] < df_fig_cov['amt'][index_tot_out]: # we have a deficit
-    df_fig_cov['amount_type'][index_def] = "Total Receipts"
-    df_fig_cov['source_func_parent'][index_def] = "Deficit"
-else: #we have a surplus, put it with outlays
-    df_fig_cov['amount_type'][index_def] = "Total Outlays"
-    df_fig_cov['source_func_parent'][index_def] = "Surplus"
+#MONTHLY SURPLUS/DEFICIT ROW
+# If deficit, make amount type Total Receipts (parent was set above as deficit)
+index_month_def_surp = df_fig_cov[(df_fig_cov.loc[:, 'source_func']==month_def_surp_label)].index.tolist()[0]
 
-# Not sure if I needed FYTD as well, but here is that chunk just in case...
+if df_fig_cov['source_func_parent'][index_month_def_surp]=="Surplus":
+    df_fig_cov['amount_type'][index_month_def_surp] = "Total Outlays"
+elif df_fig_cov['source_func_parent'][index_month_def_surp]=="Deficit":
+    df_fig_cov['amount_type'][index_month_def_surp] = "Total Receipts"
+else:
+    print("Error!")
+
+
+
+
+# FYTD SURPLUS/DEFICIT ROW
 
 #Find index for deficit FYTD value
-index_def_fytd = df_fig_cov[(df_fig_cov.loc[:, 'source_func']==year_def_surp_label)].index.tolist()[0]
+index_fytd_def_surp = df_fig_cov[(df_fig_cov.loc[:, 'source_func']==year_def_surp_label)].index.tolist()[0]
 
-if df_fig_cov['amt'][index_tot_rec] < df_fig_cov['amt'][index_tot_out]: # we have a deficit
-    df_fig_cov['amount_type'][index_def_fytd] = "Total Receipts"
-    df_fig_cov['source_func_parent'][index_def_fytd] = "Deficit"
-else: #we have a surplus, put it with outlays
-    df_fig_cov['amount_type'][index_def_fytd] = "Total Outlays"
-    df_fig_cov['source_func_parent'][index_def_fytd] = "Surplus"
+if df_fig_cov['source_func_parent'][index_fytd_def_surp]=="Surplus":
+    df_fig_cov['amount_type'][index_fytd_def_surp] = "Total Outlays"
+elif df_fig_cov['source_func_parent'][index_fytd_def_surp]=="Deficit":
+    df_fig_cov['amount_type'][index_fytd_def_surp] = "Total Receipts"
+else:
+    print("Error!")
 
 
 
@@ -929,6 +948,17 @@ for i in range(len(df_fig4)):
 
 
 df_fig4['total_OL_month'] = df_fig4['total_OL_month'].astype(float)
+
+
+#%%
+"""|--------------------------------------------------------------------|"""
+"""|--STEP X: Clean up                                                  |"""
+"""|--------------------------------------------------------------------|"""
+
+del df9
+del df1_notes_or_other
+del df9_dir
+del df9_filename_list
 
 
 
