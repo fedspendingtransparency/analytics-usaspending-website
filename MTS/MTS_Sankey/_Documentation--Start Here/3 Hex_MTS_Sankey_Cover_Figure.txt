@@ -1,8 +1,0 @@
-Sankey Cover Figure: 
-Receipts	Green		#8cb95e
-Outlays		Teal		#2a717d
-Surplus		Dark Green 	#1e3b22
-Deficit		Dark Teal	#07272a
-
-
-White: #ffffff
