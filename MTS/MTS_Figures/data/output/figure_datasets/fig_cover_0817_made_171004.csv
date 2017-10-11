@@ -1,0 +1,33 @@
+source_func,amt_M,fytd_M,comp_per_pfy_M,fy,month,rec,outlay,source_func_parent,amount_type,amt,fytd,comp_per_pfy
+Individual Income Taxes,109306.0,1421997.0,1386447.0,2017,08,True,False,Individual Income Taxes,Receipt,109306000000.0,1421997000000.0,1386447000000.0
+Corporation Income Taxes,1337.0,233631.0,233079.0,2017,08,True,False,Corporation Income Taxes,Receipt,1337000000.0,233631000000.0,233079000000.0
+Employment and General Retirement,84894.0,1016469.0,969824.0,2017,08,True,False,Social Insurance and Retirement Receipts,Receipt,84894000000.0,1016469000000.0,969824000000.0
+Unemployment Insurance,4217.0,45424.0,48366.0,2017,08,True,False,Social Insurance and Retirement Receipts,Receipt,4217000000.0,45424000000.0,48366000000.0
+Other Retirement,363.0,3859.0,3588.0,2017,08,True,False,Social Insurance and Retirement Receipts,Receipt,363000000.0,3859000000.0,3588000000.0
+Excise Taxes,7416.0,72603.0,72480.0,2017,08,True,False,Excise Taxes,Receipt,7416000000.0,72603000000.0,72480000000.0
+Estate and Gift Taxes,1765.0,21172.0,19875.0,2017,08,True,False,Estate and Gift Taxes,Receipt,1765000000.0,21172000000.0,19875000000.0
+Customs Duties,2947.0,31374.0,31692.0,2017,08,True,False,Customs Duties,Receipt,2947000000.0,31374000000.0,31692000000.0
+Miscellaneous Receipts,14067.0,119643.0,144801.0,2017,08,True,False,Miscellaneous Receipts,Receipt,14067000000.0,119643000000.0,144801000000.0
+Total,226311.0,2966172.0,2910151.0,2017,08,True,False,Total Receipts,Total Receipts,226311000000.0,2966172000000.0,2910151000000.0
+National Defense,51993.0,543107.0,535011.0,2017,08,False,True,National Defense,Outlay,51993000000.0,543107000000.0,535011000000.0
+International Affairs,2150.0,39027.0,37461.0,2017,08,False,True,International Affairs,Outlay,2150000000.0,39027000000.0,37461000000.0
+"General Science, Space, and Technology",2824.0,27744.0,27422.0,2017,08,False,True,"General Science, Space, and Technology",Outlay,2824000000.0,27744000000.0,27422000000.0
+Energy,-158.0,3201.0,2557.0,2017,08,False,True,Energy,Outlay,-158000000.0,3201000000.0,2557000000.0
+Natural Resources and Environment,3723.0,32707.0,34017.0,2017,08,False,True,Natural Resources and Environment,Outlay,3723000000.0,32707000000.0,34017000000.0
+Agriculture,360.0,22861.0,22348.0,2017,08,False,True,Agriculture,Outlay,360000000.0,22861000000.0,22348000000.0
+Commerce and Housing Credit,-6610.0,-13205.0,-22335.0,2017,08,False,True,Commerce and Housing Credit,Outlay,-6610000000.0,-13205000000.0,-22335000000.0
+Transportation,9805.0,84211.0,82010.0,2017,08,False,True,Transportation,Outlay,9805000000.0,84211000000.0,82010000000.0
+Community and Regional Development,1955.0,20892.0,18577.0,2017,08,False,True,Community and Regional Development,Outlay,1955000000.0,20892000000.0,18577000000.0
+"Education, Training, Employment, and Social Services",9475.0,129838.0,99573.0,2017,08,False,True,"Education, Training, Employment, and Social Services",Outlay,9475000000.0,129838000000.0,99573000000.0
+Health,49302.0,485645.0,465843.0,2017,08,False,True,Health,Outlay,49302000000.0,485645000000.0,465843000000.0
+Medicare,55843.0,519568.0,525443.0,2017,08,False,True,Medicare,Outlay,55843000000.0,519568000000.0,525443000000.0
+Income Security,35447.0,462592.0,471564.0,2017,08,False,True,Income Security,Outlay,35447000000.0,462592000000.0,471564000000.0
+Social Security,79163.0,865310.0,839299.0,2017,08,False,True,Social Security,Outlay,79163000000.0,865310000000.0,839299000000.0
+Veterans Benefits and Services,15417.0,154043.0,153241.0,2017,08,False,True,Veterans Benefits and Services,Outlay,15417000000.0,154043000000.0,153241000000.0
+Administration of Justice,4648.0,53926.0,52076.0,2017,08,False,True,Administration of Justice,Outlay,4648000000.0,53926000000.0,52076000000.0
+General Government,1571.0,17768.0,16427.0,2017,08,False,True,General Government,Outlay,1571000000.0,17768000000.0,16427000000.0
+Net Interest,25260.0,274563.0,257688.0,2017,08,False,True,Net Interest,Outlay,25260000000.0,274563000000.0,257688000000.0
+Undistributed Offsetting Receipts,-8167.0,-83915.0,-88980.0,2017,08,False,True,Undistributed Offsetting Receipts,Outlay,-8167000000.0,-83915000000.0,-88980000000.0
+Total,334000.0,3639882.0,3529243.0,2017,08,False,True,Total Outlays,Total Outlays,334000000000.0,3639882000000.0,3529243000000.0
+deficit for the month,107689.0,0.0,0.0,2017,08,False,False,Deficit,Total Receipts,107689000000.0,0.0,0.0
+deficit fytd,0.0,673710.0,0.0,2017,08,False,False,Deficit,Total Receipts,0.0,673710000000.0,0.0
