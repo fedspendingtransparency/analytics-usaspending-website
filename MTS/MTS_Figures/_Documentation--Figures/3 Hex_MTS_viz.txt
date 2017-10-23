@@ -1,8 +1,19 @@
-Fig 1 and Sankey Cover Figure: 
+Sankey Cover Figure: 
+Receipts	Green		#8cb95e
+Receipts 	Dark green	#4c7600
+Outlays		Teal		#2a717d
+Outlays		Dark teal	#265155
+
+Surplus		Gold 		#dea022
+Deficit		Gold		#dea022
+
+White: #ffffff
+
+Fig 1 
 Receipts	Green		#8cb95e
 Outlays		Blue		#174b51
 D/S		Yellow		#f7d500
-
+Labels		Dark grey	#333333
 
 Fig 3: Receipts by Source (Green)
 Gita's Emerald to Lime
